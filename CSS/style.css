@@ -1,0 +1,222 @@
+/*Font, reset, general setting*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'ralewayregular';
+    src: url('raleway-regular-webfont.woff2') format('woff2'),
+    url('../fonts/raleway-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+}
+
+.main_width{
+    width: 90%;
+    margin: auto;
+}
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+/*Header*/
+header {
+    height: 40px;
+    width: 100%;
+    background-color: black;
+}
+.boxh{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.boxh a{
+    text-decoration: none;
+}
+.logo{
+    line-height: 40px;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+.logo span{
+    color: #41f4ca;
+}
+.boxh nav{
+    height: 100%;
+    float: right;
+    overflow: hidden;
+}
+nav ul li{
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-shadow: 1px 1px grey;
+    text-align: center;
+    padding: 0 30px 0 30px;
+    line-height: 40px;
+    float: left;
+    display: block;
+    border-right: 1px solid grey;
+}
+nav ul li a{
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+nav li:nth-child(1){
+    border-left: 1px solid grey;
+}
+/*Sekcja 1.*/
+.slider {
+    width: 100%;
+    height: 500px;
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 25%, #dddddd 72%, #f3f3f3 92%, #ffffff 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 25%, #dddddd 72%, #f3f3f3 92%, #ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 25%, #dddddd 72%, #f3f3f3 92%, #ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0); /* IE6-9 */
+}
+.arrow_box, .slider_content {
+    float:left;
+    display: block;
+    height: 100%;
+}
+.slider_content{
+    width: 80%;
+}
+.arrow_box{
+    width: 10%;
+}
+.product_slider_photo{
+    width: 45%;
+    height: 337px;
+    background-image: url("../images/black_chair.png");
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-top: 100px;
+}
+.product_slider_info{
+    width: 55%;
+    float: left;
+}
+.product_slider_info{
+    padding: 150px 0 150px 0;
+}
+.slider_text h3 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    text-shadow: 0.5px 0.5px grey;
+}
+.slider_text h3 span{
+    color: #41f4ca;
+}
+.slider_text p {
+    font-size: 15px;
+    line-height: 18px;
+    color: #444444;
+    font-weight: 300;
+    text-align: center;
+    margin: 20px 0 20px 0;
+    text-shadow: 0.25px 0.25px grey;
+}
+.slider_button{
+    width: 170px;
+    height: 45px;
+    background-color: #41f4ca;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 45px;
+    text-shadow: 0.25px 0.25px white;
+    text-align: center;
+    margin: auto;
+}
+.product_slider_info a{
+    text-decoration: none;
+    color: white;
+}
+.left_arrow, .right_arrow{
+    height: 100%;
+    font-size: 80px;
+    color: #41f4ca;
+    font-weight: 300;
+    margin: 200px 0 150px 0;
+    text-align: center;
+}
+/*Sekcja 2.*/
+.product_gallery{
+    width: 100%;
+    background-color: white;
+    margin-top: 20px;
+}
+.box_gallery{
+    width: 30%;
+    float: left;
+    margin: auto;
+}
+.box_gallery .info_bar_gallery{
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    margin-top: 100px;
+    height: 60px;
+}
+.box_gallery .info_bar_gallery > div{
+    width: 100%;
+    float: left;
+    margin: 10px 0px 0px 10px;
+}
+.box_gallery .green_bar {
+    height: 8px;
+    background-color: #41f4ca;
+    width: 60%;
+}
+.box_gallery h3{
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+
+}
+.product_gallery .box_gallery:first-child{
+    height: 200px;
+    background-image: url("../images/box1_img.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.product_gallery .box_gallery:nth-child(2){
+    height: 200px;
+    background-image: url("../images/box2_img.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0 5% 0 5%;
+}
+.product_gallery .box_gallery:nth-child(3){
+    background-color: white;
+    background-size: contain;
+    border: 1px solid gainsboro;
+    padding: 20px 10px;
+}
+.info_bar_gallery1 p {
+    margin: 15px 0px;
+    color: #666666;
+    font-size: 15px;
+}
+.offer {
+    width: 100%;
+    background-color: rgba(170, 171, 170, 0.2);
+}
+.title_offer {
+    height: 60px;
+}
