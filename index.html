@@ -3,177 +3,248 @@
 <head>
     <meta charset="UTF-8">
     <title>Sit_On_Chair_by_Archieewald</title>
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <header>
-        <div class="main_width">
-            <div class="boxh">
-                <a href="">
+    <div class="main-hero">
+        <header class="page-header">
+            <div class="main_width">
+                <a class="page-logo" href="">
                     <div class="logo"><p>SIT <span>ON</span> CHAIR</p></div>
                 </a>
-            </div>
-            <div class="boxh">
-                <nav>
-                    <ul>
-                        <li><a href="">o firmie</a></li>
+                <nav class="page-nav">
+                    <ul class="page-nav-list">
+                        <li>
+                            <a href="">o firmie</a>
+                            <ul class="sub-nav-list">
+                                <li><a href="">aktualności</a></li>
+                                <li><a href="">nasz team</a></li>
+                                <li><a href="">historia</a></li>
+                            </ul>
+                        </li>
                         <li><a href="">galeria</a></li>
                         <li><a href="">kontakt</a></li>
                     </ul>
                 </nav>
             </div>
-        </div>
-    </header>
-    <div class="clearfix"></div>
-    <section class="slider">
-        <div class="main_width">
-            <div class="arrow_box">
-                <div class="left_arrow"> < </div>
-            </div>
-            <div class="slider_content">
-                <div class="product_slider_photo"></div>
-                <div class="product_slider_info">
-                    <div class="slider_text">
-                        <h3>SIT <span>ON</span> OUR<span> CHAIR</span></h3>
-                        <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aperiam commodi deleniti dicta dolores facilis illum laborum libero, mollitia nostrum obcaecati quaerat quia quo rerum, sed temporibus vero vitae?</span></p>
+        </header>
+        <section class="page-slider">
+            <div class="main_width">
+                <div class="arrow-box">
+                    <a class="left-arrow" onclick="plusSlides(-1)"> < </a>
+                </div>
+                <div class="slider-content">
+                    <div class="product-slider-photo"></div>
+                    <div class="product-slider-info">
+                        <div class="slider-text">
+                            <h3>SIT <span>ON</span> OUR<span> CHAIR</span></h3>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aperiam commodi deleniti dicta dolores facilis illum laborum libero, mollitia nostrum obcaecati quaerat quia quo rerum, sed temporibus vero vitae?</span></p>
+                        </div>
+                        <a href="">
+                            <div class="slider-button">ZOBACZ WIĘCEJ</div>
+                        </a>
                     </div>
-                    <a href="">
-                         <div class="slider_button">ZOBACZ WIĘCEJ</div>
-                    </a>
+                </div>
+                <div class="slider-content">
+                    <div class="product-slider-photo"></div>
+                    <div class="product-slider-info">
+                        <div class="slider-text">
+                            <h3>SIT <span>ON</span> OUR<span> CHAIR</span></h3>
+                            <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab amet aperiam commodi deleniti dicta dolores facilis illum laborum libero, mollitia nostrum obcaecati quaerat quia quo rerum, sed temporibus vero vitae?</span></p>
+                        </div>
+                        <a href="">
+                            <div class="slider-button">ZOBACZ WIĘCEJ</div>
+                        </a>
+                    </div>
+                </div>
+                <div class="arrow-box">
+                    <a class="right-arrow" onclick="plusSlides(1)"> > </a>
                 </div>
             </div>
-            <div class="arrow_box">
-                <div class="right_arrow"> > </div>
-            </div>
-        </div>
-    </section>
-    <div class="clearfix"></div>
-    <section class="product_gallery">
+        </section>
+    </div>
+    <section class="product-gallery">
         <div class="main_width">
-            <div class="box_gallery">
+            <div class="box-gallery">
                 <a href="http://www.google.pl">
-                    <div class="info_bar_gallery">
-                        <div>
-                            <h3>Chair CLAIR</h3>
-                            <div class="green_bar"></div>
-                        </div>
+                    <div class="info-bar-gallery">
+                        <h3>Chair CLAIR</h3>
                     </div>
                 </a>
             </div>
-            <div class="box_gallery">
+            <div class="box-gallery">
                 <a href="http://www.google.pl">
-                    <div class="info_bar_gallery">
-                        <div>
-                            <h3>Chair MARGARITA</h3>
-                            <div class="green_bar"></div>
-                        </div>
+                    <div class="info-bar-gallery">
+                        <h3>Chair MARGARITA</h3>
                     </div>
                 </a>
             </div>
-            <div class="box_gallery">
+            <div class="box-gallery">
                 <a href="http://www.google.pl">
-                    <div class="info_bar_gallery1">
+                    <div class="info-bar-gallery-text">
                         <h3>Find all inputs</h3>
-                        <div class="green_bar"></div>
                         <p><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                             Culpa eos error eveniet ipsum labore, sint tenetur!
                             Animi autem cum deleniti distinctio earum fugiat ipsam repellat velit.
-                            <br><br>Harum qui sint vel?</span></p>
+                            <br><br>Harum qui sint vel?</span>
+                        </p>
                     </div>
                 </a>
             </div>
         </div>
     </section>
-    <div class="clearfix"></div>
-    <section class="offer">
+    <section class="application">
         <div class="main_width">
-            <div class="title_offer">
+            <section class="choice_part inline">
+                <header>
+                    <h3>SKOMPONUJ SWOJE KRZESŁO</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="form">
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz rodzaj</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Clair</li>
+                            <li>Margarita</li>
+                            <li>Selena</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz kolor</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Czerwony</li>
+                            <li>Czarny</li>
+                            <li>Pomarańczowy</li>
+                        </ul>
+                    </div>
+                    <div class="drop_down_list">
+                        <span class="list_label">Wybierz materiał</span>
+                        <span class="list_arrow"></span>
+                        <ul class="list_panel">
+                            <li>Tkanina</li>
+                            <li>Skóra</li>
+                        </ul>
+                    </div>
+                    <div class="checkbox check-box">
+                        <input type="checkbox" id="transport" data-transport-price="200">
+                        <label for="transport">Transport</label>
+                    </div>
+                    <!--<div class="checkbox"></div>-->
+                    <!--<span class="list_label inline_text">Transport</span>-->
+                </div>
+            </section>
+            <section class="image_part inline">
+                <img src="images/red_chair.png">
+            </section>
+
+            <section class="summary_part inline">
+                <header class="align_right">
+                    <h3>PODSUMOWANIE</h3>
+                    <span class="green_bell"></span>
+                </header>
+
+                <div class="summary_panel">
+                    <div class="panel_left">
+                        <h4 class="title">Twój fotel</h4>
+                        <span class="color"></span>
+                        <span class="pattern"></span>
+                        <span class="transport"></span>
+                    </div>
+                    <div class="panel_right">
+                        <h4 class="title value"></h4>
+                        <span class="color value"></span>
+                        <span class="pattern value"></span>
+                        <span class="transport value"></span>
+                    </div>
+                    <div class="sum_label">SUMA</div>
+                    <div class="sum"><strong></strong></div>
+                </div>
+                <a href="" class="green_button">Zamawiam</a>
+            </section>
+        </div>
+    </section>
+    <section class="product-offer">
+        <div class="main_width">
+            <div class="title-offer">
                 <h3>CENNIK</h3>
-                <div class="green_bar"></div>
             </div>
-            <div class="BasicPlan">
-                <div class="circle_out">
-                    <div class="circle_in"></div>
-                </div>
-                <h2>BASIC PLAN</h2>
-                <div class="circle_price">
-                    <p>85<span class="indexgorny">99</span></p>
-                    <p>PLN/MSC</p>
-                </div>
-                <div class="Stripes">
-                    <div class="strip">
-                        <p>Zakup towaru + dowóz</p>
+            <div class="product-offer-container">
+                <div class="BasicPlan product-offer-box">
+                    <h2>BASIC PLAN</h2>
+                    <div class="circle-price">
+                        <p>85<span class="upper-index">99</span></p>
+                        <p>PLN/MSC</p>
                     </div>
-                    <div class="strip">
-                        <p>Serwis</p>
+                    <div class="stripes">
+                        <div class="offer-strip">
+                            <p>Zakup towaru + dowóz</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Serwis</p>
+                        </div>
                     </div>
-                </div>
-                <div class="button">
-                    <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
-                </div>
-            </div>
-            <div class="StandardPlan">
-                <div class="circle_out">
-                    <div class="circle_in"></div>
-                </div>
-                <h2>STANDRAD PLAN</h2>
-                <div class="circle_price">
-                    <p>95<span class="indexgorny">99</span></p>
-                    <p>PLN/MSC</p>
-                </div>
-                <div class="Stripes">
-                    <div class="strip">
-                        <p>Zakup towaru + dowóz</p>
-                    </div>
-                    <div class="strip">
-                        <p>Serwis</p>
-                    </div>
-                    <div class="strip">
-                        <p>Gwarancja 5 lat</p>
+                    <div class="button">
+                        <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
                     </div>
                 </div>
-                <div class="button">
-                    <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
-                </div>
-            </div>
-            <div class="AdvancePlan">
-                <div class="circle_out">
-                    <div class="circle_in"></div>
-                </div>
-                <h2>ADVANCE PLAN</h2>
-                <div class="circle_price">
-                    <p>211<span class="indexgorny">00</span></p>
-                    <p>PLN/MSC</p>
-                </div>
-                <div class="Stripes">
-                    <div class="strip">
-                        <p>Zakup towaru + dowóz</p>
+                <div class="StandardPlan product-offer-box">
+                    <h2>STANDARD PLAN</h2>
+                    <div class="circle-price">
+                        <p>95<span class="upper-index">99</span></p>
+                        <p>PLN/MSC</p>
                     </div>
-                    <div class="strip">
-                        <p>Serwis</p>
+                    <div class="stripes">
+                        <div class="offer-strip">
+                            <p>Zakup towaru + dowóz</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Serwis</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Gwarancja 5 lat</p>
+                        </div>
                     </div>
-                    <div class="strip">
-                        <p>Gwarancja 6 lat</p>
-                    </div>
-                    <div class="strip">
-                        <p>Porady projektanta</p>
+                    <div class="button">
+                        <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
                     </div>
                 </div>
-                <div class="button">
-                    <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
+                <div class="AdvancePlan product-offer-box">
+                    <h2>ADVANCE PLAN</h2>
+                    <div class="circle-price">
+                        <p>211<span class="upper-index">00</span></p>
+                        <p>PLN/MSC</p>
+                    </div>
+                    <div class="stripes">
+                        <div class="offer-strip">
+                            <p>Zakup towaru + dowóz</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Serwis</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Gwarancja 6 lat</p>
+                        </div>
+                        <div class="offer-strip">
+                            <p>Porady projektanta</p>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <a class="link" href="http://www.coderslab.pl">DOŁĄCZ</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="clearfix"></div>
-    <section class="form">
+    <section class="contact-form">
         <div class="main_width">
-            <div class="title_form">
+            <div class="title-form">
                 <h3>KONTAKT</h3>
-                <div class="green_bar"></div>
             </div>
             <form>
-                <div class="group_one">
+                <div class="group-one">
                     <div class="form">
                         <label for="username"></label>
                         <input id="username" type="text" name="username" placeholder=" Imię"/>
@@ -187,43 +258,44 @@
                         <textarea id="about" rows="5" cols="30" placeholder=" Wiadomość"></textarea>
                     </div>
                 </div>
-                <div class="group_two">
-                    <div class="photo_form"></div>
-                    <div class="form">
-                        <label class="checkbox">
-                            <input type="checkbox"/>
-                            <span class="check_ok"></span>
-                            <span>Zgadzam się na przetawarzanie <br>
+                <div class="group-two">
+                    <div class="group-two-container">
+                        <div class="photo-form"></div>
+                        <div class="form">
+                            <label class="checkbox">
+                                <input type="checkbox"/>
+                                <span class="check-ok"></span>
+                                <span>Zgadzam się na przetawarzanie <br>
                             danych osobowych
                             </span>
-                        </label>
+                            </label>
+                        </div>
                     </div>
-                </div>
-                <div class="button_container">
-                    <div class="button" >
-                        <input type="submit" value="WYŚLIJ">
+                    <div class="button-container">
+                        <div class="contact-button" >
+                            <input type="submit" value="WYŚLIJ">
+                        </div>
                     </div>
                 </div>
             </form>
         </div>
     </section>
-    <div class="clearfix"></div>
     <footer>
         <div class="main_width">
-            <div class="box_rights">
+            <div class="box-rights">
                 <p>Copyright 2014.|All Rights Reserved. -Sit On Chair</p>
             </div>
-            <div class="box_social">
+            <div class="box-social">
                 <span><a href="https://www.flickr.com"></a></span>
                 <span><a href="https://vimeo.com"></a> </span>
                 <span><a href="https://pl.pinterest.com"></a> </span>
                 <span><a href="https://www.twitter.com"></a> </span>
-
             </div>
-            <div class="box_name">
+            <div class="box-name">
                 <p>SIT <b>ON</b> CHAIR</p>
             </div>
         </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>

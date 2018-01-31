@@ -1,0 +1,106 @@
+.page-slider {
+  width: 100%;
+  background: #fcfff4; /* Old browsers */
+  background: -moz-linear-gradient(top, #fcfff4 48%, #dfe5d7 72%, #b3bead 99%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #fcfff4 48%, #dfe5d7 72%, #b3bead 99%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #fcfff4 48%, #dfe5d7 72%, #b3bead 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#b3bead', GradientType=0); /* IE6-9 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.page-slider .main_width {
+  justify-content: center;
+  align-content: center;
+}
+.arrow-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 0.2;
+  height: 500px;
+}
+.left-arrow, .right-arrow{
+  font-size: 80px;
+  color: #24ba9f;
+  font-weight: 300;
+  cursor: pointer;
+}
+
+.slider-content {
+  display: none;
+  flex-grow: 0.6;
+  justify-content: center;
+  align-items: center;
+}
+.product-slider-photo {
+  flex-grow: 2;
+  min-width: 45%;
+  height: 337px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.page-slider .main_width div:nth-child(2) .product-slider-photo{
+  background-image: url("../images/black_chair.png");
+}
+.page-slider .main_width div:nth-child(3) .product-slider-photo{
+  background-image: url("../images/orange_chair.png");
+}
+.product-slider-info{
+  display: flex;
+  flex-grow: 0.5;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+.slider-text h3 {
+  font-size: 40px;
+  color: black;
+  text-align: center;
+  text-shadow: 0.5px 0.5px grey;
+  flex-grow: 1;
+}
+.slider-text h3 span{
+  color: #24ba9f;
+}
+.page-slider .main_width div:nth-child(3) .slider-text h3 span:first-child{
+  color: orange;
+}
+.slider-text p {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 18px;
+  color: #444444;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 0.25px 0.25px grey;
+  flex-grow: 1;
+  margin: 20px 10px;
+}
+.slider-button{
+  width: 170px;
+  height: 45px;
+  background-color: #24ba9f;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 45px;
+  text-shadow: 0.25px 0.25px white;
+  text-align: center;
+  flex-grow: 1;
+}
+.product-slider-info a{
+  text-decoration: none;
+  color: white;
+}
+.slider-button:hover {
+  box-shadow: 0 0 3px 3px white;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+    text-shadow:1px 1px grey;
+}

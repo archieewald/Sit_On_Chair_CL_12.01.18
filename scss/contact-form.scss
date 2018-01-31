@@ -1,0 +1,150 @@
+.contact-form {
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-form .main_width{
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.title-form {
+  height: 100px;
+  padding-top: 40px;
+  font-weight: 200;
+  flex-grow: 1;
+}
+.title-form h3 {
+  margin-bottom: 10px;
+}
+.title-form:after{
+  content: "";
+  display: inline-block;
+  width: 33.33%;
+  height: 5px;
+  background-color: #24ba9f;
+}
+//CONTACT FORM
+form {
+  width: 100%;
+  height: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 20px;
+}
+//FLEX LEFT
+.group-one{
+  flex-grow: 6;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+input[type="text"],
+input[type="email"],
+textarea{
+  margin-top: 15px;
+  width: 100%;
+  height: 40px;
+  line-height: 35px;
+  font-size: 20px;
+  border: 0.5px solid #27C7AB;
+  font-family: 'Raleway', sans-serif;;
+}
+.form::placeholder{
+  font-size: 15px;
+}
+.form textarea{
+  height: 160px;
+  margin-bottom: 30px;
+}
+//FLEX RIGHT
+.group-two{
+  flex-grow: 4;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.group-two-container,
+.button-container{
+  flex-grow: 1;
+  display: flex;
+  height: 80%;
+}
+.group-two-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.button-container {
+  height: 20%;
+  display: flex;
+  justify-content: center;
+}
+
+.photo-form{
+  height: 70%;
+  width: 264px;
+  display: flex;
+  flex-grow: 2;
+  background-image: url("../images/red_chair.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 10px;
+}
+.group-two-container form {
+  height: 30%;
+  flex-grow: 1;
+}
+.check-ok{
+  width: 30px;
+  height: 30px;
+  border: 1px solid #24ba9f;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+.checkbox span:last-child{
+  display: inline-block;
+  width: auto;
+  margin-bottom: 20px;
+  font-size: 15px;
+  color: #c5c5c5;
+}
+.checkbox [type="checkbox"]{
+  display: none;
+  visibility: hidden;
+}
+.checkbox [type="checkbox"]:checked + span {
+  background-image: url("../images/form_ok.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.contact-button{
+  min-width: 70%;
+  height: 45px;
+  display: block;
+  border-radius: 10px;
+}
+.contact-button input[type="submit"] {
+  width: 100%;
+  height: 100%;
+  display: block;
+  background-color: #27C7AB;
+  color: white;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 10px;
+  font-family: 'Raleway', sans-serif;;
+  cursor: pointer;
+}
+.contact-button:hover {
+  box-shadow: 0 0 3px 3px #24ba9f;
+}
