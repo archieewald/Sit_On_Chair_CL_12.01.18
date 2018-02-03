@@ -102,7 +102,7 @@ for (var i = 0; i < optionsMaterial.length; i++){
 //Select transport
 var checkTransport = document.querySelector("#transport");
 
-checkTransport.addEventListener("change", function (event) {
+checkTransport.addEventListener("click", function (event) {
     if (this.checked !== false) {
         var name = this.nextElementSibling.innerText;
         var value = this.getAttribute("data-transport-price");
@@ -116,6 +116,8 @@ checkTransport.addEventListener("change", function (event) {
 
 //Summary sum
 
+var applicationSection = document.querySelector(".application");
+
 var sumValue = document.querySelector(".sum strong");
 
 var summaryPanel = document.querySelector(".panel_right");
@@ -123,7 +125,7 @@ var sumsToCount = summaryPanel.children;
 
 
 
-window.addEventListener("mouseover", function (event) {
+applicationSection.addEventListener("click", function (event) {
     var sumsCounter = 0;
     for (var i = 0; i < sumsToCount.length; i++){
         var numbValue = Number(sumsToCount[i].innerText);
